@@ -8,19 +8,35 @@
   <body>
     <h2>Las Vegas</h2>
     <div class="nav-bar">
-      <button id="new-game"><i class="fa fa-refresh fa-2x"></i> New Game</button>
-      <div>
+
+      <div class="sub-header">
+        <button id="new-game"><i class="fa fa-refresh fa-2x"></i></button>
+        <div class="change-players">
+          <button id="increase-players"><i class="fa fa-arrow-up fa-lg"></i></button>
+          <button id="decrease-players"><i class="fa fa-arrow-down fa-lg"></i></button>
+        </div>
+      </div>
+
+      <div class="sub-header">
         <button id="about-game"><i class="fa fa-info-circle fa-2x"></i> About</button>
         <button id="view-game"><i class="fa fa-gamepad fa-2x"></i> Play</button>
       </div>
-      <div>
+
+      <div class="sub-header">
         <button id="linked-in"><i class="fa fa-linkedin-square fa-2x"></i></button>
         <button id="github"><i class="fa fa-github-square fa-2x"></i></button>
       </div>
+
     </div>
     <canvas id="game-canvas"></canvas>
 
     <!-- <script type="application/javascript" src="vendor/keymaster.js"></script> -->
     <script type="application/javascript" src="lib/bundle.js"></script>
+    <script>
+      let originalHTML = document.getElementById("new-game").innerHTML;
+      setInterval(() => {
+        document.getElementById("new-game").innerHTML = originalHTML + `New Game with ${window.numPlayers} Players`;
+      }, 100);
+    </script>
   </body>
 </html>

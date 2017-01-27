@@ -31,6 +31,16 @@ button{
   width: 1070;
 }
 
+.change-players{
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-header{
+  display: flex;
+  flex-direction: row;
+}
+
 
 button:hover{
   color: black;
