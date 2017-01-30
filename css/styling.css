@@ -1,49 +1,52 @@
-canvas, h2{
-  text-align: center;
+canvas, h2 {
+    text-align: center;
 }
 
-h2{
-  margin-top: 24px;
-  margin-bottom: 0;
-  font-family: sans-serif;
+h2 {
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    font-family: sans-serif;
 }
 
-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
 
-button{
-  background-color: transparent;
-  border-style: none;
-  color: grey;
-  font-family: sans-serif;
-  font-size: 20px;
+button {
+    color: grey;
+    border-style: none;
+    background-color: transparent;
+
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
+.nav-bar {
+    display: flex;
+    flex-direction: row;
 
-.nav-bar{
-  display: flex;
-  flex-direction: row;
-  margin: 20px;
-  justify-content: space-between;
-  width: 1070;
+    width: 1070;
+    margin: 20px;
+
+    justify-content: space-between;
 }
 
-.change-players{
-  display: flex;
-  flex-direction: column;
+.change-players {
+    display: flex;
+    flex-direction: column;
 }
 
-.sub-header{
-  display: flex;
-  flex-direction: row;
+.sub-header {
+    display: flex;
+    flex-direction: row;
 }
 
+button:hover {
+    cursor: pointer;
 
-button:hover{
-  color: black;
-  cursor: pointer;
-
+    color: black;
 }
