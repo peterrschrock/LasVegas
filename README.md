@@ -1,6 +1,6 @@
 ## Las Vegas
 
-[Las Vegas Link]: https://peterrschrock.github.io/
+[LasVegasLink] (https://peterrschrock.github.io/)
 
 ### About the Game
 
