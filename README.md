@@ -27,27 +27,17 @@ The game board displays:
 * The most recent bid, so that the user can easily understand what is happening.
 * The dice, either in a rolling animation or after they are sorted.
 
-
+A Five Player Game:
 ![selectDice] (docs/screenshots/select-dice.png)
+
+A Three Player Game:
 ![threePlayers] (docs/screenshots/three-players.png)
+
+The Instructions Page:
 ![instructions] (docs/screenshots/instructions.png)
 
 ```js
-const spaceMesh = new THREE.Object3D();
 
-const angleDistance = (Math.PI * 2) / numAsteroids;
-for (let i = 0; i < numAsteroids; i++) {
-  const angle = angleDistance * i;
-  const distance = 325 + (Math.random() * 300);
-  const newAsteroid = new Asteroid();
-  newAsteroid.sphere.position.x = Math.cos(angle) * distance;
-  newAsteroid.sphere.position.y = Math.sin(angle) * distance;
-  newAsteroid.sphere.position.z = Math.random() * 100;
-
-  const size = Math.random();
-  newAsteroid.sphere.scale.set(size, size, size);
-  spaceMesh.add(newAsteroid.sphere);
-}
 ```
 
 
